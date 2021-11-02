@@ -1,9 +1,8 @@
 //First Gulp file
 
 const {src , dest , watch , series} = require('gulp');
-const sass = require('gulp-sass')(require('sass'))
-const browsersync = require('browser-sync').create()
-
+const sass = require('gulp-sass')(require('sass'));
+const browsersync = require('browser-sync').create();
 //sass task
 
 function scssTask(){
@@ -27,6 +26,9 @@ function browsersyncReload(e){
     browsersync.reload();
     e();
 }
+
+
+
 
 //Watch Task
 function watchTask(){
